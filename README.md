@@ -72,11 +72,3 @@ Puisqu'il s'agit d'un projet Front-End classique, l'installation est très simpl
    * Ouvrez simplement le fichier `index.html` dans votre navigateur web.
    * *Ou* utilisez une extension comme **Live Server** sur VS Code pour bénéficier du rechargement à chaud, particulièrement utile pour tester les requêtes `fetch` JavaScript des fichiers locaux.
 
-## 👥 L'Équipe
-
-Projet réalisé dans le cadre de la SAE 05-06 par :
-*   Eduardo
-*   Titouan
-*   Antoine
-*   Tran
-*   Lucas
