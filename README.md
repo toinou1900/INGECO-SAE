@@ -1,6 +1,6 @@
 # INGECO TERRITOIRES - Site Vitrine
 
-![Aperçu du projet](./../INGECO-SAE/WEB-PAGE/INGECO/img/logo/Accueil.png) <!-- Remplacez ce lien par une capture d'écran de votre site -->
+![Aperçu du projet](./WEB-PAGE/INGECO/img/logo/Accueil.png) <!-- Remplacez ce lien par une capture d'écran de votre site -->
 
 > **Projet SAE 05-06**  
 > Site vitrine facilitant l'accès à des services de proximité dans les domaines de l'emploi, de l'insertion professionnelle, de la formation et de l'accompagnement.
