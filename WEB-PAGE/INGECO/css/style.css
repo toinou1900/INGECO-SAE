@@ -148,7 +148,7 @@ header{
                     transition: background-color 0.4s ease;
                 }
 
-                & li:hover{
+                & li:not(.formation):hover{
                     background-color: var(--color-border);
                 }
             }
@@ -164,6 +164,10 @@ header{
 }
 
 /*============== MAIN ==============*/
+
+main{
+    gap: 1rem;
+}
 
 .bandeau-main{
 
@@ -238,3 +242,54 @@ header{
 
 
 /*============== FOOTER ==============*/
+
+footer{
+    background-color: var(--color-primary);
+    columns: var(--color-background);
+    width: 100%;
+    padding: 2rem;
+}
+
+footer > .conteneur{
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    & > a img{
+        width: 13rem;
+        height: auto;
+        display: block;
+    }
+
+    & nav{
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+footer p{
+    font-size: var(--font-size-small);
+    text-align: center;
+}
+
+.reseaux-sociaux ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.reseaux-sociaux a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 0.3s ease,
+                transform 0.3s ease;
+}
+
+.reseaux-sociaux img{
+    width: 5rem;
+    height: 5rem;
+}
+
