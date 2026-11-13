@@ -183,9 +183,6 @@ header{
         z-index: 0;
 
         object-fit: cover;
-
-        /* A enlever d'ici et mettre spécifiquement pour chaque image de page */
-        object-position: center 50%; 
     }
 
     & h1{
@@ -199,6 +196,10 @@ header{
         color: var(--color-background);
         
     }
+}
+
+#image-accueil{
+    object-position: center 50%; 
 }
 
 .background-bandeau{
