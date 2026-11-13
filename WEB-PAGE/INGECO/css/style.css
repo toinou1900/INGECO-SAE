@@ -125,7 +125,11 @@ header{
             max-width: 12rem;
         }
 
-        & nav{
+        
+    }
+}
+
+.navigation-principale{
 
             color: var(--color-text-secondary);
             font-weight: var(--fw-md);
@@ -149,10 +153,8 @@ header{
                 }
             }
         }
-    }
-}
 
-#formation{
+.formation{
     background-color: var(--color-primary);
     color: var(--color-background);
 
