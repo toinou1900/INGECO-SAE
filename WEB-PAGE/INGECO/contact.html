@@ -47,6 +47,8 @@
 
         <main class="conteneur">
 
+                 <!-- Bannière du haut -->
+
             <section class="bandeau-main">
 
                 <img src="./assets/img/Collaboration joyeuse au bureau.png"
@@ -54,41 +56,67 @@
 
                 <div class="background-bandeau"></div>
                 <div class="background-titre1"></div>
-                <h1>CONTACTS</h1>
+
+                <div class="bandeau-titre-contact">
+
+                <h1>Nous contacter</h1>
+                <h2> Une question , un projet ou un besoin d'accompagnement ? </h2>
+
+                </div>
 
             </section>
 
+            <!-- Colonne de gauche : Coordonnées -->
 
-            <div>
-                <h1>Nous contacter</h1>
-                <h2> Une question , un projet ou un besoin d'accompagnement ? </h2>
-                <img src="./img/contact-us.jpg"> <!--si on l'utilise il faudra mettre un lien sur https://www.magnific.com/ --> 
+            <section class="contact-info"></section>
 
-            </div>
+                <div class="contact-adresse">
 
-            <div>
-                <h3>Adresse</h3>
-                <h4>a definir</h4>
-                <img src="./img/logo/adresse.png"> <!--viens de canva --> 
+                    <h2>Adresse</h2>
+                    <p>a definir</p>
+                    <img src="./assets/icones/pin-svgrepo-com.svg"> 
+                </div>
 
-                <h3>Téléphone</h3>
-                <h4>a definir</h4>
-                <img src="./img/logo/telephone.png"> <!--viens de canva -->
+                <div class="contact-telephone">
+                    <h2>Téléphone</h2>
+                    <p>a definir</p>
+                    <img src="./assets/icones/phone-svgrepo-com.svg"> 
+                </div>
 
-                <h3>Email</h3>
-                <h4>contact@ingeco-territoires.fr</h4>
-                <img src="./img/logo/email.png"> <!--viens de canva -->
+                <div class="contact-email">
+                    <h2>Email</h2>
+                    <p>contact@ingeco-territoires.fr</p>
+                    <img src="./assets/icones/mail-alt-svgrepo-com.svg">        
+                </div>
                 
-            </div>
+                </section>
 
             <aside>
-                <p>Nom</p>
-                <p>Prénom </p>
-                <p>Email </p>
-                <p>Téléphone</p>
-                <p>Message </p>
-                <p>Envoyer le message -></p>
+
+                <!-- Colonne de droite : Formulaire -->
+                 
+            <section class="contact-formulaire"></section>
+
+                <label for="Nom">Nom </label>
+       				 <input type="text" id="Nom" name="Nom">
+
+                <label for="Prénom">Prénom </label>
+                    <input type="text" id="Prénom" name="Prénom">
+
+                <label for="Email">Email </label>
+                    <input type="email" id="Email" name="Email">
+
+                <label for="Téléphone">Téléphone</label>
+                    <input type="tel" id="Téléphone" name="Téléphone">
+
+                <label for="Message">Message </label>
+                    <textarea id="Message" name="Message"></textarea>
+
+                <button type="submit">Envoyer le message</button>
+
+            </section>
             </aside>
+
         </main>
 
 
