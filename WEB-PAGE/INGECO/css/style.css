@@ -6,3 +6,5 @@
 
 /* Accueil uniquement : les sélecteurs n'affectent pas les autres pages */
 @import url(./accueil.css);
+
+@import url(./notreEquipe.css);

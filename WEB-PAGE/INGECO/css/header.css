@@ -20,7 +20,11 @@ header > .conteneur > a img {
     color: var(--color-text-secondary);
     font-weight: var(--fw-md);
 }
-
+.navigation-principale li {
+    display: flex;
+justify-content: center;
+align-items: center;
+}
 .navigation-principale ul {
     display: flex;
     justify-content: flex-end;
