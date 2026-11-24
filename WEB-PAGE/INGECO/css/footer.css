@@ -1,38 +1,39 @@
-/*============== FOOTER ==============*/
-
-footer{
-    background-color: var(--color-primary);
-    columns: var(--color-background);
+/* ============== FOOTER ============== */
+footer {
     width: 100%;
-    padding: 2rem;
+    padding: var(--spacing-xl) 0;
+
+    background-color: var(--color-primary);
+    color: var(--color-background);
 }
 
-footer > .conteneur{
+footer > .conteneur {
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
-
-    & > a img{
-        width: 13rem;
-        height: auto;
-        display: block;
-    }
-
-    & nav{
-        display: flex;
-        gap: 2rem;
-    }
+    gap: var(--spacing-xl);
 }
 
-footer p{
-    font-size: var(--font-size-small);
-    text-align: center;
+footer > .conteneur > a img {
+    display: block;
+    width: 13rem;
+    height: auto;
 }
 
-.reseaux-sociaux ul{
+footer nav {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: var(--spacing-xl);
+}
+
+footer p {
+    font-size: var(--font-size-small);
+}
+
+.reseaux-sociaux ul {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+
     list-style: none;
 }
 
@@ -40,27 +41,30 @@ footer p{
     display: flex;
     align-items: center;
     justify-content: center;
-
-    transition: opacity 0.3s ease,
-                transform 0.3s ease;
+    
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.reseaux-sociaux img{
+.reseaux-sociaux a:hover {
+    opacity: 0.85;
+    transform: translateY(-3px);
+}
+
+.reseaux-sociaux img {
+    display: block;
     width: 5rem;
     height: 5rem;
 }
 
-.facebook a{
-    margin-right: 0.75rem;
-    width: 4.25rem;
-    height: 4.25rem;
-
-    border: 6px solid var(--color-surface);
+/* Le Facebook est plus petit, avec une bordure extérieure. */
+.facebook a {
+    width: 5rem;
+    height: 5rem;
+    border: 5px solid var(--color-surface);
     border-radius: 1rem;
 }
 
-.reseaux-sociaux img .facebook{
+.reseaux-sociaux .facebook img {
     width: 3rem;
     height: 3rem;
 }
-

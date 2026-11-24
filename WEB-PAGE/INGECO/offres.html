@@ -1,153 +1,110 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>  
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INGECO TERRITOIRES | Offres</title>
 
-        <title>INGECO | Offres</title>
+    <!-- Chemin du favicon à vérifier quand l'asset sera ajouté -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="conteneur flex row">
+            <a href="index.html">
+                <img src="./assets/logo/Logo_Ingeco_Territoires_multicolore.png"
+                     alt="Logo INGECO TERRITOIRES">
+            </a>
 
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-        
-        <link rel="icon" type="image/png" href="img/favicon.png">
-    </head>
+            <nav class="navigation-principale" aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="notreEquipe.html">Présentation</a></li>
+                    <li><a href="action.html">Actions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="offres.html" aria-current="page">Offres</a></li>
+                    <li class="formation"><a href="formation.html">Formations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <body>
+    <main>
+        <section class="bandeau-main">
+            <img src="./assets/img/Collaboration joyeuse au bureau.png" alt="" class="image-accueil">
+            <div class="background-bandeau"></div>
+            <div class="background-titre1"></div>
 
-        <!-- ========== HEADER ========== -->
+            <div class="bandeau-contenu conteneur flex">
+                <h1>OFFRES EMPLOI<br>ET STAGES</h1>
+            </div>
+        </section>
 
-        <header>
+        <section class="offres-section conteneur" id="toutes">
+            <h2>Nos offres</h2>
+            <!-- TODO : séparer les offres internes et externes une fois validées. -->
+            <article class="offre-card">
+                <h3>Agent d'accueil (H/F)</h3>
+                <p>Accueil, orientation et accompagnement du public.</p>
+                <button class="boutton-offre" type="button" disabled>Voir l'offre</button>
+                <img src="./assets/icones/arrow-turn-up-right-svgrepo-com.svg" alt="">
+            </article>
 
-            <div class="conteneur row">
+            <article class="offre-card">
+                <h3>Assistant administratif (H/F)</h3>
+                <p>Appui à la gestion administrative et au suivi des dossiers.</p>
+                <button class="boutton-offre" type="button" disabled>Voir l'offre</button>
+                <img src="./assets/icones/arrow-turn-up-right-svgrepo-com.svg" alt="">
+            </article>
 
-                <a href="index.html">
-                    <img src="./assets/logo/Logo_Ingeco_Territoires_multicolore.png"
-                        alt="Logo INGECO TERRITOIRES" id="image-accueil">
-                </a>
+            <article class="offre-card">
+                <h3>Chargé de projet (H/F)</h3>
+                <p>Participer au développement des actions territoriales.</p>
+                <button class="boutton-offre" type="button" disabled>Voir l'offre</button>
+                <img src="./assets/icones/arrow-turn-up-right-svgrepo-com.svg" alt="">
+            </article>
+        </section>
+    </main>
 
-                <nav class="navigation-principale">
+    <footer>
+        <div class="conteneur flex row">
+            <a href="index.html">
+                <img src="./assets/logo/Logo_blanc_Ingeco_Territoires.png"
+                     alt="Logo INGECO TERRITOIRES">
+            </a>
+
+            <nav aria-label="Informations et réseaux sociaux">
+                <!-- TODO : ajouter le vrai lien vers les conditions et mentions légales -->
+                <p>Conditions et assistance</p>
+
+                <div class="reseaux-sociaux">
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="notreEquipe.html">Présentation</a></li>
-                        <li><a href="action.html">Actions</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="offres.html" aria-current="page">Offres</a></li>
-                        <li class="formation"><a href="formation.html">Formations</a></li>
+                        <!-- TODO : renseigner les adresses réelles des réseaux sociaux -->
+                        <li>
+                            <a href="#" aria-label="Instagram">
+                                <img src="./assets/icones/instagram.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="facebook">
+                            <a href="#" aria-label="Facebook">
+                                <img src="./assets/icones/facebook.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="LinkedIn">
+                                <img src="./assets/icones/linkedin.svg" alt="">
+                            </a>
+                        </li>
                     </ul>
-                </nav>
-
-            </div>
-
-        </header>
-
-
-        <!-- ========== CONTENU PRINCIPAL ========== -->
-
-        <main class="conteneur">
-
-            <section class="bandeau-main">
-
-                <img src="./assets/img/Collaboration joyeuse au bureau.png"
-                    alt="" class="image-accueil">
-
-                <div class="background-bandeau"></div>
-                <div class="background-titre1"></div>
-                <h1>OFFRES EMPLOI <br> ET STAGES</h1>
-            <!--Rajouter ou non la ligne "Des opportunités sur le territoire ?"  -->
-
-            </section>
-
-            <nav aria-label="Navigation des sections">
-                <a href="#Toutes">Toutes</a>
-                <a href="#Ateliers">Ateliers</a>
-                <a href="#Évènements">Évènements</a>
-                <a href="#Projets">Projets</a>
-            </nav1>
-
-            <section id="Toutes">
-                <article class="Agent">
-                    <h3>Agent d'accueil (H/F)</h3>
-                    <p></p>
-                    <p>Accueil, orientation et accompagnement du public</p>
-                    <input class="boutton-offre" type="button" value="Voir l'offre">
-                    <img src="./assets/icones/arrow-turn-up-right-svgrepo-com.svg" alt="fleche vers la droite">
-                </article>
-                
-                <article class="Assistant admin">
-                    <h3>Assistant administratif (H/F)</h3>
-                    <p></p>
-                    <p>Appui à la gestion administrative et au suivi des dossiers</p>
-                    <input class="boutton-offre" type="button" value="Voir l'offre">
-                    <img src="./assets/icones/arrow-turn-up-right-svgrepo-com.svg" alt="fleche vers la droite">
-                </article>
-
-                <article class="Chargé de projet">
-                    <h3>Chargé de projet (H/F)</h3>
-                    <p></p>
-                    <p>Participer au développement des actions territoriales</p>
-                    <input class="boutton-offre" type="button" value="Voir l'offre">
-                    <img src="./assets/icones/arrow-turn-up-right-svgrepo-com.svg" alt="fleche vers la droite">
-                </article>
-            </section>
-
-        </main>
-
-
-        <!-- ========== FOOTER ========== -->
-
-        <footer>
-
-            <div class="conteneur row">
-
-                <a href="index.html">
-                    <img src="./assets/logo/Logo_blanc_Ingeco_Territoires.png"
-                        alt="Logo INGECO TERRITOIRES">
-                </a>
-                <nav>
-                    <!-- Lien à ajouter lorsque la page sera définie -->
-                    <p>Conditions et assistance</p>
-                    
-                    <!-- Réseaux sociaux : liens à définir avec la cliente -->
-                    <div class="reseaux-sociaux">
-    
-    
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <img src="./assets/icones/instagram.svg" alt="logo instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    
-                                </a>
-                            </li>
-                            <li class="facebook">
-                                <a href="#">
-                                    <img src="./assets/icones/facebook.svg"
-                                    alt="logo facebook">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./assets/icones/linkedin.svg"
-                                    alt="logo linkedin">
-    
-                                </a>
-                            </li>
-                        </ul>
-    
-                        
-                    </div>
-                </nav>
-
-            </div>
-
-        </footer>
-
-    </body>
+                </div>
+            </nav>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
+</body>
 </html>

@@ -1,210 +1,144 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <!-- Informations générales -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <title>INGECO TERRITOIRES | Accueil</title>
-
-        <!-- Favicon -> icone sur la barre de navigation du browser -->
-        <link rel="icon" type="image/png" href="img/favicon.png">
-
-        <!-- Police Inter et son pré-chargement -->
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-            rel="stylesheet">
-
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <header>
-
-            <div class="conteneur row">
-
-                <a href="index.html">
-                    <img src="./assets/logo/Logo_Ingeco_Territoires_multicolore.png"
-                        alt="Logo INGECO TERRITOIRES" id="image-accueil">
-                </a>
-
-                <nav class="navigation-principale">
-                    <ul>
-                        <li><a href="index.html" aria-current="page">Accueil</a></li>
-                        <li><a href="notreEquipe.html">Présentation</a></li>
-                        <li><a href="action.html">Actions</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="offres.html">Offres</a></li>
-                        <li class="formation"><a href="formation.html">Formations</a></li>
-                    </ul>
-                </nav>
-
-            </div>
-
-        </header>
-
-
-        <!-- ========== CONTENU PRINCIPAL ========== -->
-
-        <main>
-
-            <!-- Bandeau d'accueil -->
-
-            <section class="bandeau-main">
-
-                <img src="./assets/img/Photo_accueil_plage-foret.png"
-                    alt="" class="image-accueil">
-
-                <div class="background-bandeau"></div>
-                <div class="background-titre1"></div>
-                <h1>INGECO<br>TERRITOIRES</h1>
-
-            </section>
-
-            <!-- Presentation -->
-
-            <section class="conteneur" id="presentation">
-
-                <h2>Qui sommes nous ?</h2>
-
-                <div class="presentation-grid">
-                    
-                    <!-- Notre Mission -->
-                    <div class="bloc-mission">
-                        <img src="./assets/icones/target.svg" alt="icone cible"
-                        class="icone-presentation">
     
-                        <h3>Notre mission</h3>
-                        
-                        <p>INGECO TERRITOIRES accompagne les personnes dans leur parcours vers l'emploi,
-                        la formation et reinsertion, en lien avec les acteurs du territoire.</p>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INGECO TERRITOIRES | Accueil</title>
 
-                    <div class="bloc-valeurs">
-                        <img src="./assets/icones/heart.svg" alt="coeur sur la main" class="icone-presentation">
+    <!-- Chemin du favicon à vérifier quand l'asset sera ajouté -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-                        <!-- Nos valeurs -->
-                        <h3>Nos valeurs</h3>
+<body>
+    <header>
+        <div class="conteneur flex row">
+            <a href="index.html">
+                <img src="./assets/logo/Logo_Ingeco_Territoires_multicolore.png"
+                     alt="Logo INGECO TERRITOIRES">
+            </a>
 
-                        <ul class="liste-valeurs">
-                            <li>Accompagnement</li>
-                            <li>Proximité</li>
-                            <li>Inclusion</li>
-                            <li>Coopération</li>
-                        </ul>
-                        
-                    </div>
-                </div>
-        
-        
-            </section>
-
-
-            <!-- Nos services -->
-
-            <section class="section-services conteneur">
-
-                <h2>Nos services</h2>
-
-                <ul class="liste-services">
-
-                    <li class="service">
-                        <img src="./assets/icones/bag.svg"
-                            alt="">
-                        <h3>Emploi</h3>
-                    </li>
-
-                    <li class="service">
-                        <img src="./assets/icones/graduation-hat-alt-svgrepo-com.svg"
-                            alt="">
-                        <h3>Formations</h3>
-                    </li>
-
-                    <li class="service">
-                        <img src="./assets/icones/people.svg"
-                            alt="">
-                        <h3>Accompagnement</h3>
-                    </li>
-
+            <nav class="navigation-principale" aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Accueil</a></li>
+                    <li><a href="notreEquipe.html">Présentation</a></li>
+                    <li><a href="action.html">Actions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="offres.html">Offres</a></li>
+                    <li class="formation"><a href="formation.html">Formations</a></li>
                 </ul>
+            </nav>
+        </div>
+    </header>
 
-            </section>
+    <main>
+        <section class="bandeau-main">
+            <img src="./assets/img/Photo_accueil_plage-foret.png" alt="" class="image-accueil">
+            <div class="background-bandeau"></div>
+            <div class="background-titre1"></div>
 
+            <div class="bandeau-contenu conteneur flex">
+                <h1>INGECO<br>TERRITOIRES</h1>
+            </div>
+        </section>
 
-            <!-- Bloc de contact -->
+        <!-- Présentation de l'association -->
+        <section class="conteneur flex" id="presentation">
+            <h2>Qui sommes-nous ?</h2>
 
-            <section class="section-contact">
-
-                <div class="conteneur row">
-
-                    <div>
-                        <h2>Besoin d'informations ?</h2>
-                        <p>Nous sommes à votre écoute.</p>
-                    </div>
-
-                    <a href="contact.html" class="bouton-contact">
-                        Nous contacter →
-                    </a>
-
+            <div class="presentation-grid">
+                <div class="bloc-mission">
+                    <img src="./assets/icones/target.svg" alt="" class="icone-presentation">
+                    <h3>Notre mission</h3>
+                    <p>
+                        INGECO TERRITOIRES accompagne les personnes dans leur parcours vers l'emploi,
+                        la formation et la réinsertion, en lien avec les acteurs du territoire.
+                    </p>
                 </div>
 
-            </section>
-
-        </main>
-
-
-        <!-- ========== FOOTER ========== -->
-
-        <footer>
-
-            <div class="conteneur row">
-
-                <a href="index.html">
-                    <img src="./assets/logo/Logo_blanc_Ingeco_Territoires.png"
-                        alt="Logo INGECO TERRITOIRES">
-                </a>
-                <nav>
-                    <!-- Lien à ajouter lorsque la page sera définie -->
-                    <p>Conditions et assistance</p>
-                    
-                    <!-- Réseaux sociaux : liens à définir avec la cliente -->
-                    <div class="reseaux-sociaux">
-    
-    
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <img src="./assets/icones/instagram.svg" alt="logo instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    
-                                </a>
-                            </li>
-                            <li class="facebook">
-                                <a href="#">
-                                    <img src="./assets/icones/facebook.svg"
-                                    alt="logo facebook">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./assets/icones/linkedin.svg"
-                                    alt="logo linkedin">
-    
-                                </a>
-                            </li>
-                        </ul>
-    
-                        
-                    </div>
-                </nav>
-
+                <div class="bloc-valeurs">
+                    <img src="./assets/icones/heart.svg" alt="" class="icone-presentation">
+                    <h3>Nos valeurs</h3>
+                    <ul class="liste-valeurs">
+                        <li>Accompagnement</li>
+                        <li>Proximité</li>
+                        <li>Inclusion</li>
+                        <li>Coopération</li>
+                    </ul>
+                </div>
             </div>
+        </section>
 
-        </footer>
-        <script src="js/script.js"></script>
-    </body>
+        <!-- Aperçu des services -->
+        <section class="section-services conteneur flex">
+            <h2>Nos services</h2>
+            <ul class="liste-services">
+                <li class="service">
+                    <img src="./assets/icones/bag.svg" alt="">
+                    <h3>Emploi</h3>
+                </li>
+                <li class="service">
+                    <img src="./assets/icones/graduation-hat-alt-svgrepo-com.svg" alt="">
+                    <h3>Formations</h3>
+                </li>
+                <li class="service">
+                    <img src="./assets/icones/people.svg" alt="">
+                    <h3>Accompagnement</h3>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Bloc de contact -->
+        <section class="section-contact">
+            <div class="flex row">
+                <div>
+                    <h2>Besoin d'informations ?</h2>
+                    <p>Nous sommes à votre écoute.</p>
+                </div>
+                <a href="contact.html" class="bouton-contact">Nous contacter →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="conteneur flex row">
+            <a href="index.html">
+                <img src="./assets/logo/Logo_blanc_Ingeco_Territoires.png"
+                     alt="Logo INGECO TERRITOIRES">
+            </a>
+
+            <nav aria-label="Informations et réseaux sociaux">
+                <!-- TODO : ajouter le vrai lien vers les conditions et mentions légales -->
+                <p>Conditions et assistance</p>
+
+                <div class="reseaux-sociaux">
+                    <ul>
+                        <!-- TODO : renseigner les adresses réelles des réseaux sociaux -->
+                        <li>
+                            <a href="#" aria-label="Instagram">
+                                <img src="./assets/icones/instagram.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="facebook">
+                            <a href="#" aria-label="Facebook">
+                                <img src="./assets/icones/facebook.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="LinkedIn">
+                                <img src="./assets/icones/linkedin.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
 </html>

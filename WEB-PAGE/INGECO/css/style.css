@@ -1,5 +1,8 @@
+/* Styles communs */
 @import url(./global.css);
 @import url(./header.css);
 @import url(./main.css);
 @import url(./footer.css);
+
+/* Accueil uniquement : les sélecteurs n'affectent pas les autres pages */
 @import url(./accueil.css);

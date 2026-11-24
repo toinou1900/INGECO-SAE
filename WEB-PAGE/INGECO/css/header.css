@@ -1,53 +1,51 @@
-/*============== HEADER ==============*/
-
-header{
-    max-height: 20rem;
+/* ============== HEADER ============== */
+header {
     width: 100%;
-    padding: var(--spacing-md);
-
-    
-    & div{
-        justify-content: space-between;
-        align-items: center;
-
-        & img{
-            max-width: 12rem;
-        }
-
-        
-    }
+    padding: var(--spacing-md) 0;
 }
 
-.navigation-principale{
+header > .conteneur {
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-xl);
+}
 
-            color: var(--color-text-secondary);
-            font-weight: var(--fw-md);
-            width: 50%;
+header > .conteneur > a img {
+    display: block;
+    width: 12rem;
+    height: auto;
+}
 
-            & ul{
-                list-style: none;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                gap: var(--spacing-md);
+.navigation-principale {
+    color: var(--color-text-secondary);
+    font-weight: var(--fw-md);
+}
 
-                & li{
-                    padding: var(--spacing-xs);
-                    border-radius: var(--radius);
-                    transition: background-color 0.4s ease;
-                }
+.navigation-principale ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--spacing-lg);
 
-                & li:not(.formation):hover{
-                    background-color: var(--color-border);
-                }
-            }
-        }
+    list-style: none;
+}
 
-.formation{
+.navigation-principale li {
+    padding: var(--spacing-xs);
+    border-radius: var(--radius);
+    
+    transition: background-color 0.4s ease;
+}
+
+.navigation-principale li:not(.formation):hover {
+    background-color: var(--color-border);
+}
+
+.formation {
     background-color: var(--color-primary);
     color: var(--color-background);
+}
 
-    &:hover{
-        background-color: var(--color-secondary);
-    }
+.formation:hover {
+    background-color: var(--color-secondary);
 }

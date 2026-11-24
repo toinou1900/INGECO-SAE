@@ -1,157 +1,118 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>  
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>INGECO | Formations</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-        
-        <link rel="icon" type="image/png" href="img/favicon.png">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INGECO TERRITOIRES | Formations</title>
 
-        <!-- ========== HEADER ========== -->
+    <!-- Chemin du favicon à vérifier quand l'asset sera ajouté -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="conteneur flex row">
+            <a href="index.html">
+                <img src="./assets/logo/Logo_Ingeco_Territoires_multicolore.png"
+                     alt="Logo INGECO TERRITOIRES">
+            </a>
 
-        <header>
+            <nav class="navigation-principale" aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="notreEquipe.html">Présentation</a></li>
+                    <li><a href="action.html">Actions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="offres.html">Offres</a></li>
+                    <li class="formation"><a href="formation.html" aria-current="page">Formations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-            <div class="conteneur row">
+    <main>
+        <section class="bandeau-main">
+            <img src="./assets/img/Collaboration joyeuse au bureau.png" alt="" class="image-accueil">
+            <div class="background-bandeau"></div>
+            <div class="background-titre1"></div>
 
-                <!-- Logo -->
-                <a href="index.html">
-                    <img src="./assets/logo/Logo_Ingeco_Territoires_multicolore.png"
-                        alt="Logo INGECO TERRITOIRES" id="image-accueil">
-                </a>
-
-                <!-- Navigation principale -->
-                <nav class="navigation-principale">
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="notreEquipe.html">Présentation</a></li>
-                        <li><a href="action.html">Actions</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="offres.html">Offres</a></li>
-                        <li class="formation"><a href="formation.html" aria-current="page">Formations</a></li>
-                    </ul>
-                </nav>
-
-            </div>
-
-        </header>
-
-
-        <!-- ========== CONTENU PRINCIPAL ========== -->
-
-        <main class="conteneur">
-                <!-- Bannière du haut -->
-            <section class="bandeau-main">
-
-                <img src="./assets/img/Collaboration joyeuse au bureau.png"
-                    alt="" class="image-accueil">
-
-                <div class="background-bandeau"></div>
-                <div class="background-titre1"></div>
+            <div class="bandeau-contenu conteneur flex">
                 <h1>Nos formations</h1>
-                <h2>Des parcours pour développer vos compétences</h2>
+            <h2>Des parcours pour développer vos compétences</h2>
+            </div>
+        </section>
 
-            </section>
+        <section class="formation-texte conteneur">
+            <h2>Découvrir nos formations</h2>
+            <p>
+                Découvrez les formations proposées par INGECO TERRITOIRES et accédez
+                aux informations et aux inscriptions via nos partenaires.
+            </p>
+        </section>
 
-            <section class="formation-texte">
-
-                <h3>Decouvrez les formations proposées par INGECO TERRITOIRES et accédez aux informations et inscriptions via nos partenaires</h3>
-
-            </section>
-
-            <section class="formations" >
-
-                <div class="formations-1">
-                    <h3>Bureautique</h3>
-                    <p class="information">Maîtrisez les outils de base de la bureautique pour optimiser votre productivité.</p>
-                    <p class="petite-info">A distance - Tout public</p>
-                    
-                    <input type="button" value="S'inscrire"><!--<a href="#">S'inscrire</a>-->
-                </div>
-
-                <div class="formations-2">
-                    <h3>Insertion professionnelle</h3>
-                    <p class="information">Descriptif de la formation 2</p>
-                    <p class="petite-info">Public : demandeurs d'emploi</p>
-
-                     <input type="button" value="S'inscrire"><!--<a href="#">S'inscrire</a>-->
-                </div>
-
-                <div class="formations-3">
-                    <h3> Développement durable</h3>
-                    <p class="information">Descriptif de la formation 3</p>
-                    <p class="petite-info">En présentiel - Tout public</p>
-
-                     <input type="button" value="S'inscrire"><!--<a href="#">S'inscrire</a>-->
-                </div>
-
-
-
-
-            </section>
-                
-
-        </main>
-
-
-        <!-- ========== FOOTER ========== -->
-
-        <footer>
-
-            <div class="conteneur row">
-
-                <a href="index.html">
-                    <img src="./assets/logo/Logo_blanc_Ingeco_Territoires.png"
-                        alt="Logo INGECO TERRITOIRES">
-                </a>
-                <nav>
-                    <!-- Lien à ajouter lorsque la page sera définie -->
-                    <p>Conditions et assistance</p>
-                    
-                    <!-- Réseaux sociaux : liens à définir avec la cliente -->
-                    <div class="reseaux-sociaux">
-    
-    
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <img src="./assets/icones/instagram.svg" alt="logo instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    
-                                </a>
-                            </li>
-                            <li class="facebook">
-                                <a href="#">
-                                    <img src="./assets/icones/facebook.svg"
-                                    alt="logo facebook">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./assets/icones/linkedin.svg"
-                                    alt="logo linkedin">
-    
-                                </a>
-                            </li>
-                        </ul>
-    
-                        
-                    </div>
-                </nav>
-
+        <!-- Cartes provisoires : les destinations seront fournies par la cliente -->
+        <section class="formations conteneur" aria-label="Liste des formations">
+            <div class="formation-card">
+                <h3>Bureautique</h3>
+                <p class="information">Maîtrisez les outils de base de la bureautique pour optimiser votre productivité.</p>
+                <p class="petite-info">À distance – Tout public</p>
+                <button type="button" disabled>S'inscrire</button>
             </div>
 
-        </footer>
+            <div class="formation-card">
+                <h3>Insertion professionnelle</h3>
+                <p class="information">Descriptif de la formation 2</p>
+                <p class="petite-info">Public : demandeurs d'emploi</p>
+                <button type="button" disabled>S'inscrire</button>
+            </div>
 
-    </body>
+            <div class="formation-card">
+                <h3>Développement durable</h3>
+                <p class="information">Descriptif de la formation 3</p>
+                <p class="petite-info">En présentiel – Tout public</p>
+                <button type="button" disabled>S'inscrire</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="conteneur flex row">
+            <a href="index.html">
+                <img src="./assets/logo/Logo_blanc_Ingeco_Territoires.png"
+                     alt="Logo INGECO TERRITOIRES">
+            </a>
+
+            <nav aria-label="Informations et réseaux sociaux">
+                <!-- TODO : ajouter le vrai lien vers les conditions et mentions légales -->
+                <p>Conditions et assistance</p>
+
+                <div class="reseaux-sociaux">
+                    <ul>
+                        <!-- TODO : renseigner les adresses réelles des réseaux sociaux -->
+                        <li>
+                            <a href="#" aria-label="Instagram">
+                                <img src="./assets/icones/instagram.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="facebook">
+                            <a href="#" aria-label="Facebook">
+                                <img src="./assets/icones/facebook.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="LinkedIn">
+                                <img src="./assets/icones/linkedin.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
+</body>
 </html>
