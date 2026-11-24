@@ -1,4 +1,6 @@
+
 /* ============== FOOTER ============== */
+
 footer {
     width: 100%;
     padding: var(--spacing-xl) 0;
@@ -7,26 +9,52 @@ footer {
     color: var(--color-background);
 }
 
-footer > .conteneur {
+/* ============== PARTIE SUPERIEURE ============== */
+
+.footer-haut {
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: var(--spacing-xl);
 }
 
-footer > .conteneur > a img {
+.footer-gauche {
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+/* Logo */
+
+.footer-logo img {
     display: block;
     width: 13rem;
     height: auto;
 }
 
-footer nav {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-xl);
+/* Navigation et informations */
+
+.navigation-footer h2,
+.informations-footer h2 {
+    font-size: var(--font-size-h3);
+    margin-bottom: var(--spacing-md);
 }
 
-footer p {
-    font-size: var(--font-size-small);
+.navigation-footer ul,
+.informations-footer ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.navigation-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ============== RESEAUX SOCIAUX ============== */
+
+.reseaux-sociaux {
+    margin-left: auto;
 }
 
 .reseaux-sociaux ul {
@@ -41,7 +69,7 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -52,19 +80,20 @@ footer p {
 
 .reseaux-sociaux img {
     display: block;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
 }
 
-/* Le Facebook est plus petit, avec une bordure extérieure. */
-.facebook a {
-    width: 5rem;
-    height: 5rem;
-    border: 5px solid var(--color-surface);
-    border-radius: 1rem;
+/* ============== PARTIE INFERIEURE ============== */
+
+.footer-bas {
+    margin-top: 3rem;
+    padding-top: var(--spacing-lg);
+
+    border-top: 1px solid var(--color-neutral);
 }
 
-.reseaux-sociaux .facebook img {
-    width: 3rem;
-    height: 3rem;
+.footer-bas p {
+    font-size: var(--font-size-small);
+    text-align: center;
 }

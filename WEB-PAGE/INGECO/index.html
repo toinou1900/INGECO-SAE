@@ -105,69 +105,83 @@
         </section>
     </main>
 
+ 
+<!-- ========== FOOTER ========== -->
+
     <footer>
-        <nav class="navigation-footer">
-            <h2>Navigation</h2>
-                <ul>
-                    <li >
-                    <a>À propos</a>
-                    </li>
-                    <li >
-                    <a>Nos actions</a>
-                    </li>
-                    <li >
-                    <a>Nos offres</a>
-                    </li>
-                    <li >
-                    <a>Contact</a>
-                    </li>
-                </ul>
-        </nav>
-            <h2>Informations</h2>
-            <ul>
-                <li class="Informations">
-                <a>Mentions légales</a>
-                </li>
-                <li class="Informations">
-                <a>Confidentialité</a>
-                </li>
-                <li class="Informations">
-                <a>Assistance</a>
-                </li>
-            </ul>
-            <p>© 2026 INGECO Territoires — Tous droits réservés.</p>
-        <div class="conteneur flex row">
-            <a href="index.html">
-                <img src="./assets/logo/Logo_blanc_Ingeco_Territoires.png"
-                     alt="Logo INGECO TERRITOIRES">
-            </a>
+        <div class="conteneur">
 
-            <nav aria-label="Informations et réseaux sociaux">
-                <!-- TODO : ajouter le vrai lien vers les conditions et mentions légales -->
+            <!-- Partie supérieure du footer -->
+            <div class="footer-haut flex row">
 
-                <div class="reseaux-sociaux">
+                <!-- Logo et liens -->
+                <div class="footer-gauche flex row">
+
+                    <!-- Logo -->
+                    <a href="index.html" class="footer-logo">
+                        <img src="./assets/logo/Logo_blanc_Ingeco_Territoires.png"
+                            alt="Logo INGECO TERRITOIRES">
+                    </a>
+
+                    <!-- Navigation -->
+                    <nav class="navigation-footer"
+                        aria-label="Navigation du pied de page">
+                        <h2>Navigation</h2>
+
+                        <ul>
+                            <li><a href="notreEquipe.html">À propos</a></li>
+                            <li><a href="action.html">Nos actions</a></li>
+                            <li><a href="offres.html">Nos offres</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Informations -->
+                    <div class="informations-footer">
+                        <h2>Informations</h2>
+                        <!-- Liens à définir ultérieurement -->
+                        <ul>
+                            <li>Mentions légales</li>
+                            <li>Confidentialité</li>
+                            <li>Assistance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Réseaux sociaux -->
+                <nav class="reseaux-sociaux"
+                    aria-label="Réseaux sociaux">
                     <ul>
-                        <!-- TODO : renseigner les adresses réelles des réseaux sociaux -->
                         <li>
                             <a href="#" aria-label="Instagram">
-                                <img src="./assets/icones/instagram.svg" alt="">
+                                <img src="./assets/icones/instagram.svg"
+                                    alt="">
                             </a>
                         </li>
                         <li class="facebook">
                             <a href="#" aria-label="Facebook">
-                                <img src="./assets/icones/facebook.svg" alt="">
+                                <img src="./assets/icones/facebook.svg"
+                                    alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#" aria-label="LinkedIn">
-                                <img src="./assets/icones/linkedin.svg" alt="">
+                                <img src="./assets/icones/linkedin.svg"
+                                    alt="">
                             </a>
                         </li>
                     </ul>
-                </div>
-            </nav>
+                </nav>
+            </div>
+
+            <!-- Partie inférieure du footer -->
+            <div class="footer-bas">
+                <p>© 2026 INGECO Territoires — Tous droits réservés.</p>
+            </div>
+
         </div>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
