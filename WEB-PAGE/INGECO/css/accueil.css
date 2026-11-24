@@ -1,0 +1,145 @@
+/*============== index ==============*/
+
+/*- Section -> Qui sommes nous -*/
+
+#presentation{
+    width: 100%;
+    padding: 4rem var(--spacing-xl) 1rem;
+    gap: var(--spacing-xl);
+}
+
+#presentation h2{
+    color: var(--color-primary);
+}
+
+.presentation-grid{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--spacing-lg);
+}
+
+.bloc-mission, .bloc-valeurs{
+    padding: var(--spacing-xl);
+    border-radius: var(--radius);
+    border: 1px solid var(--color-border);
+}
+
+    /*- Bloc Notre mission -*/
+.bloc-mission{
+    background-color: var(--color-surface);
+    border-left: 5px solid var(--color-accent);
+}
+
+    /*- Bloc Nos valeurs -*/
+.bloc-valeurs{
+    background-color: var(--color-background);
+}
+
+.icone-presentation{
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.bloc-mission h3,
+.bloc-valeurs h3{
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.liste-valeurs {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.liste-valeurs li::before{
+    content: "↗";
+    color: var(--color-secondary);
+    font-weight: var(--fw-bold);
+    margin-right: var(--spacing-sm);
+}
+
+
+/*- Section -> Navegation des actions -*/
+
+.section-services{
+    text-align: center;
+    padding: 1rem var(--spacing-xl) 3rem;
+}
+
+.section-services h2 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xl);
+}
+
+.liste-services{
+    list-style: none; 
+    display: flex;
+    justify-content: center; 
+    gap: var(--spacing-xl);
+    flex-wrap: wrap;
+}
+.service:hover{
+    transform: translateY(-5px);
+}
+
+.service {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: var(--spacing-xl);
+    width: 15rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease; 
+    background-color: var( --color-surface);
+}
+
+.service img {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: var(--spacing-md);
+}
+
+/*- Section -> Contact -*/
+
+.section-contact{
+    width: calc(100% - 2rem);
+    max-width: 70rem;
+    padding: 3rem var(--spacing-xl);
+    margin: 0 auto var(--spacing-xl);
+
+    background-color: var( --color-accent);
+    border-radius: var(--radius);
+}
+
+.section-contact > .conteneur{
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-xl);
+}
+
+.section-contact h2,
+.section-contact p{
+    color: var(--color-background);
+}
+
+.section-contact p{
+    margin-top: var(--spacing-sm);
+}
+
+.bouton-contact {
+    padding: var(--spacing-md) var(--spacing-lg);
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+    border-radius: var(--radius);
+    font-weight: var(--fw-md);
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+.bouton-contact:hover {
+    background-color: var(--color-background);
+}
+
