@@ -1,192 +1,162 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>  
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>INGECO | Actions</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-        
-        <link rel="icon" type="image/png" href="img/favicon.png">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INGECO TERRITOIRES | Actions</title>
 
+    <!-- Chemin du favicon à vérifier avec les assets du projet -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header>
+        <div class="conteneur flex row">
+            <a href="index.html">
+                <img src="./assets/logo/Logo_Ingeco_Territoires_multicolore.png"
+                     alt="Logo INGECO TERRITOIRES">
+            </a>
 
-    <body>
+            <nav class="navigation-principale" aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="notreEquipe.html">Présentation</a></li>
+                    <li><a href="action.html" aria-current="page">Actions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="offres.html">Offres</a></li>
+                    <li class="formation"><a href="formation.html">Formations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <!-- ========== HEADER ========== -->
+    <!-- ========== CONTENU PRINCIPAL ========== -->
+    <main>
+        <!-- Bandeau pleine largeur -->
+        <section class="bandeau-main">
+            <img src="./assets/img/Collaboration joyeuse au bureau.png"
+                 alt="" class="image-accueil">
+            <div class="background-bandeau"></div>
+            <div class="background-titre1"></div>
 
-        <header>
-
-            <div class="conteneur row">
-
-                <!-- Logo -->
-                <a href="index.html">
-                    <img src="./assets/logo/Logo_Ingeco_Territoires_multicolore.png"
-                        alt="Logo INGECO TERRITOIRES" id="image-accueil">
-                </a>
-
-                <!-- Navigation principale -->
-                <nav class="navigation-principale">
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="presentation.html">Présentation</a></li>
-                        <li><a href="action.html" aria-current="page">Actions</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="offres.html">Offres</a></li>
-                        <li class="formation"><a href="formation.html">Formations</a></li>
-                    </ul>
-                </nav>
-
-            </div>
-
-        </header>
-
-
-        <!-- ========== CONTENU PRINCIPAL ========== -->
-
-        <main class="conteneur">
-
-            <section class="bandeau-main">
-
-                <img src="./assets/img/Collaboration joyeuse au bureau.png"
-                    alt="" class="image-accueil">
-
-                <div class="background-bandeau"></div>
-                <div class="background-titre1"></div>
+            <div class="bandeau-contenu conteneur flex">
                 <h1>ACTIONS</h1>
+            </div>
+        </section>
 
-            </section>
-        
-            <nav aria-label="Navigation des sections">
-                <a href="#Toutes">Toutes</a>
-                <a href="#Ateliers">Ateliers</a>
-                <a href="#Évènements">Évènements</a>
-                <a href="#Projets">Projets</a>
-            </nav1>
-            <section id="Toutes">
-                <div class="domaines-listes">
-                    <article class="projet-territorial">
-                        <img src="img\Place holder.png">
-                        <div class="contenu-domaine">
-                            <h3>Projet territorial</h3>
-                            <p>Un plan partagé pour développer un territoire.</p>   <!-- Rajouter autre chose pour la guyane et hexagone fr ou on met tt dedans ? -->
-                            <a href="projetterritorial.html">En savoir plus</a>
-                        </div>
-                        
-                    </article>
+        <!-- Navigation : catégories Ateliers et Évènements à créer ultérieurement -->
+        <nav class="conteneur" aria-label="Navigation des sections">
+            <a href="#Toutes">Toutes</a>
+            <a href="#Ateliers">Ateliers</a>
+            <a href="#Evenements">Évènements</a>
+            <a href="#Projets">Projets</a>
+        </nav>
 
-                    <article class="domaines-insertion">
-                        <div class="contenu-domaine">
-                            <h3>Insertion professionnelle</h3>
-                            <p>Accompagner les personnes dans leur parcours
-                                 vers l'emploi et favoriser leur autonomie professionnelle.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="domaine-accompagnement">
-                        <div class="contenu-domaine">
-                            <h3>Accompagnement social</h3>
-                            <p>Faciliter l'accès aux ressources et 
-                                accompagner les personnes dans leur démarches quotidiennes.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="domaine-dev-terr">
-                        <div class="contenu-domaine">
-                            <h3>Développement territorial</h3>
-                            <p>Soutenir les initiatives locales et contribuer au 
-                                développement économique et social des territoires.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="domaine-formations">
-                        <div class="contenu-domaine">
-                            <h3>Formation et compétences</h3>
-                            <p>
-                                Favoriser l'acquisition de nouvelles compétences et accompagner les projets professionnels.
-                            </p>
-                        </div>
-                    </article>
-                </div>
-                
-                
-                <!--<article class="Atelier">
-                <img src="img\Place holder.png">
-                <h3>Atelier CV et candidature</h3>
-                <p>Rédiger un CV et une lettre de motivation efficaces et ciblés.</p>     à supprimer ?
-                <a href="atelier.html">En savoir plus</a>
+        <!-- Domaines d'action ajoutés par l'équipe -->
+        <section class="conteneur" id="Toutes">
+            <div class="domaines-listes">
+                <!-- Projet territorial -->
+                <article class="projet-territorial" id="Projets">
+                    <!-- Vérifier le chemin de l'image provisoire -->
+                    <img src="img/Place holder.png" alt="">
+                    <div class="contenu-domaine">
+                        <h3>Projet territorial</h3>
+                        <p>Un plan partagé pour développer un territoire.</p>
+                        <!-- Informations Guyane / France hexagonale à préciser -->
+                        <a href="projetterritorial.html">En savoir plus</a>
+                    </div>
                 </article>
 
-                <article class="Forum de l'emploi">
-                <img src="img\Place holder.png">
-                <h3>Forum de l'emploi</h3>
-                <p>Un forum de l'emploi met en relation employeurs et candidats.</p>
-                <a href="forum.html">En savoir plus</a>
-                </article>-->
+                <!-- Insertion professionnelle -->
+                <article class="domaines-insertion">
+                    <div class="contenu-domaine">
+                        <h3>Insertion professionnelle</h3>
+                        <p>
+                            Accompagner les personnes dans leur parcours
+                            vers l'emploi et favoriser leur autonomie professionnelle.
+                        </p>
+                    </div>
+                </article>
 
-            
-            </section>
-        </main>
+                <!-- Accompagnement social -->
+                <article class="domaine-accompagnement">
+                    <div class="contenu-domaine">
+                        <h3>Accompagnement social</h3>
+                        <p>
+                            Faciliter l'accès aux ressources et accompagner
+                            les personnes dans leurs démarches quotidiennes.
+                        </p>
+                    </div>
+                </article>
 
+                <!-- Développement territorial -->
+                <article class="domaine-dev-terr">
+                    <div class="contenu-domaine">
+                        <h3>Développement territorial</h3>
+                        <p>
+                            Soutenir les initiatives locales et contribuer au
+                            développement économique et social des territoires.
+                        </p>
+                    </div>
+                </article>
 
-        <!-- ========== FOOTER ========== -->
+                <!-- Formation et compétences -->
+                <article class="domaine-formations">
+                    <div class="contenu-domaine">
+                        <h3>Formation et compétences</h3>
+                        <p>
+                            Favoriser l'acquisition de nouvelles compétences
+                            et accompagner les projets professionnels.
+                        </p>
+                    </div>
+                </article>
+            </div>
 
-        <footer>
+            <!-- Anciens brouillons « Atelier CV » et « Forum de l'emploi »
+                 laissés de côté, comme dans la version transmise. -->
+        </section>
+    </main>
 
-            <div class="conteneur">
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="conteneur flex row">
+            <a href="index.html">
+                <img src="./assets/logo/Logo_blanc_Ingeco_Territoires.png"
+                     alt="Logo INGECO TERRITOIRES">
+            </a>
 
-                <a href="index.html">
-                    <img src="./assets/logo/Logo_blanc_Ingeco_Territoires.png"
-                        alt="Logo INGECO TERRITOIRES">
-                </a>
-
-                <!-- Lien à ajouter lorsque la page sera définie -->
+            <nav aria-label="Informations et réseaux sociaux">
+                <!-- TODO : ajouter les liens vers les conditions / mentions légales -->
                 <p>Conditions et assistance</p>
 
-                <!-- Réseaux sociaux : liens à définir avec la cliente -->
                 <div class="reseaux-sociaux">
-
-
                     <ul>
+                        <!-- TODO : renseigner les adresses réelles des réseaux sociaux -->
                         <li>
-                            <a href="#">
-                                <img src="./assets/icones/instagram-svgrepo-com.svg" alt="logo instagram">
+                            <a href="#" aria-label="Instagram">
+                                <img src="./assets/icones/instagram.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="facebook">
+                            <a href="#" aria-label="Facebook">
+                                <img src="./assets/icones/facebook.svg" alt="">
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./assets/icones/facebook-svgrepo-com.svg"
-                                alt="logo facebook">
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./assets/icones/linkedin-svgrepo-com.svg"
-                                alt="logo linkedin">
-
+                            <a href="#" aria-label="LinkedIn">
+                                <img src="./assets/icones/linkedin.svg" alt="">
                             </a>
                         </li>
                     </ul>
-
-                    
                 </div>
-
-            </div>
-
-        </footer>
-
-    </body>
+            </nav>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
+</body>
 </html>
