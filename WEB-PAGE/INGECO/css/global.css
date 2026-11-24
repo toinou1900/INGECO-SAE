@@ -117,3 +117,11 @@ img {
 .invisible {
     display: none;
 }
+
+/* ============== CARDS : STYLE COMMUN ============== */
+.card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    overflow: hidden;
+}

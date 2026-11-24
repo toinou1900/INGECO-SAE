@@ -4,7 +4,6 @@
 @import url(./main.css);
 @import url(./footer.css);
 
-/* Accueil uniquement : les sélecteurs n'affectent pas les autres pages */
+/* Styles par page */
 @import url(./accueil.css);
-
 @import url(./notreEquipe.css);

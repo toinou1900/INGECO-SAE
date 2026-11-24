@@ -1,40 +1,92 @@
-/*============== Notre Équipe ==============*/
+/* ============== NOTRE EQUIPE ============== */
 
-/*- Section -> Qui sommes nous -*/
-
-.equipe-cards{ 
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--spacing-xl);
-    padding: 4rem var(--spacing-xl) 1rem;
-    
-}
-
-.cards {
-    flex: 1; 
-    min-width: 18rem; 
-    max-width: 24rem; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-xl);
+/* Bandeau de présentation, sous la photo */
+.equipe-intro {
     background-color: var(--color-surface);
-    border-radius: var(--radius);
+    text-align: center;
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
 }
 
-.cards p {
-    padding-inline: var(--spacing-md); 
-    padding-bottom: var(--spacing-lg); 
+.equipe-intro h2 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
 }
 
-.cards img {
-    width: 100%;
-    height: 20rem;
-    object-fit: cover; 
+/* Section des membres */
+.equipe-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.equipe-section > h2 {
+    text-align: center;
+    color: var(--color-primary);
     margin-bottom: var(--spacing-xl);
 }
 
+/* Organisation des cartes avec Flexbox */
+.equipe-gp-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-lg);
 
-.cards h3 {
-    padding-inline: var(--spacing-lg); /* Espace à gauche et à droite du texte[cite: 10] */
+    width: 100%;
+    max-width: 76rem;
+    margin: 0 auto;
+}
+
+/* Style particulier des cartes de l'équipe */
+.equipe-card {
+    flex: 1 1 18rem;
+    max-width: var(--card-max-width);
+
+    display: flex;
+    flex-direction: column;
+    
+    background-color: var(--color-background);
+    border: 2px solid var(--color-text);
+}
+
+.equipe-card > img {
+    display: block;
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+
+    background-color: var(--color-neutral);
+    border-bottom: 2px solid var(--color-text);
+}
+
+.equipe-card-contenu {
+    padding: var(--spacing-lg);
+}
+
+.equipe-card h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.equipe-card .fonction {
+    color: var(--color-secondary);
+    font-weight: var(--fw-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Autres rubriques conservées en attendant les informations */
+.proximite-section,
+.partenaires-section {
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+}
+
+.proximite-section h2,
+.partenaires-section h2 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.partenaires-section {
+    margin-bottom: var(--spacing-xl);
 }
