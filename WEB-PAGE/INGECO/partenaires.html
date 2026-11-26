@@ -3,8 +3,159 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>INGECO TERRITOIRES | Nos partenaires</title>
-
+        <title>INGECO TERRITOIRES | Nos partenaires</title>
+        <!-- Chemin du favicon à vérifier quand l'asset sera ajouté -->
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
+    <body>
+        <header>
+            <div class="conteneur flex row">
+                <a href="index.html">
+                    <img src="./assets/logo/Logo_Ingeco_Territoires_multicolore.png"
+                        alt="Logo INGECO TERRITOIRES">
+                </a>
+
+                <nav class="navigation-principale" aria-label="Navigation principale">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="notreEquipe.html">Présentation</a></li>
+                        <li><a href="action.html">Actions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="offres.html">Offres</a></li>
+                        <li class="formation"><a href="formation.html" aria-current="page">Formations</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!---------------------------------MAIN-------------------------------------> 
+        <main>
+            <section class="equipe-section conteneur">
+                <h2>Les membres de notre équipe</h2>
+                <!-- Membres provisoires : remplacer noms, fonctions, textes et photos -->
+                <article class="card equipe-card">
+                    <img src="./assets/Place holder.png" alt="" >
+                    <div class="equipe-card-contenu">
+                        <h3>Prénom Nom</h3>
+                        <p class="fonction">Fonction à préciser</p>
+                        <p>Courte présentation de ce membre et de ses missions.</p>
+                    </div>
+                </article>
+
+                <article class="card equipe-card">
+                    <img src="./assets/Place holder.png" alt="">
+                    <div class="equipe-card-contenu">
+                        <h3>Prénom Nom</h3>
+                        <p class="fonction">Fonction à préciser</p>
+                        <p>Courte présentation de ce membre et de ses missions.</p>
+                    </div>
+                </article>
+
+                <article class="card equipe-card">
+                    <img src="./assets/Place holder.png" alt="">
+                    <div class="equipe-card-contenu">
+                        <h3>Prénom Nom</h3>
+                        <p class="fonction">Fonction à préciser</p>
+                        <p>Courte présentation de ce membre et de ses missions.</p>
+                    </div>
+                </article>
+
+                <article class="card equipe-card">
+                    <img src="./assets/Place holder.png" alt="">
+                    <div class="equipe-card-contenu">
+                        <h3>Prénom Nom</h3>
+                        <p class="fonction">Fonction à préciser</p>
+                        <p>Courte présentation de ce membre et de ses missions.</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <!-------------------FOOTER-------------------------->
+
+        <footer>
+            <div class="conteneur">
+
+                <!-- Partie supérieure du footer -->
+                <div class="footer-haut flex row">
+
+                    <!-- Logo et liens -->
+                    <div class="footer-gauche flex row">
+
+                        <!-- Logo -->
+                        <a href="index.html" class="footer-logo">
+                            <img src="./assets/logo/Logo_blanc_Ingeco_Territoires.png"
+                                alt="Logo INGECO TERRITOIRES">
+                        </a>
+
+                        <!-- Navigation -->
+                        <nav class="navigation-footer"
+                            aria-label="Navigation du pied de page">
+                            <h2>Navigation</h2>
+
+                            <ul>
+                                <li><a href="notreEquipe.html">À propos</a></li>
+                                <li><a href="action.html">Nos actions</a></li>
+                                <li><a href="offres.html">Nos offres</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+
+                        <!-- Informations -->
+                        <div class="informations-footer">
+                            <h2>Informations</h2>
+                            <!-- Liens à définir ultérieurement -->
+                            <ul>
+                                <li>Mentions légales</li>
+                                <li>Confidentialité</li>
+                                <li>Assistance</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Réseaux sociaux -->
+                    <nav class="reseaux-sociaux"
+                        aria-label="Réseaux sociaux">
+                        <ul>
+                            <li>
+                                <a href="#" aria-label="Instagram">
+                                    <img src="./assets/icones/instagram.svg"
+                                        alt="">
+                                </a>
+                            </li>
+                            <li class="facebook">
+                                <a href="#" aria-label="Facebook">
+                                    <img src="./assets/icones/facebook.svg"
+                                        alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="LinkedIn">
+                                    <img src="./assets/icones/linkedin.svg"
+                                        alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Partie inférieure du footer -->
+                <div class="footer-bas">
+                    <p>© 2026 INGECO Territoires — Tous droits réservés.</p>
+                </div>
+
+            </div>
+        </footer>
+    <script src="js/script.js"></script>
+
+        
+    </body>
+
 </html>
+
